@@ -16,7 +16,7 @@ const navIcons = [
 const Navbar = () => {
   return (
     <>
-      <header className='w-full'>
+      <header className='2xl:px-44'>
         <nav className='nav'>
           <Link href="/" className="flex items-center gap-2">
             <Image src="/assets/icons/logo.svg" alt="Logo" width={27} height={27} />
