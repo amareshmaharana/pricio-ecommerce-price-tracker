@@ -48,9 +48,7 @@ export const scrapeAndStoreProduct = async (productUrl: string) => {
   }
 };
 
-
 export const getProductById = async (productId: string) => {
-  
   try {
     connectToDB();
 
@@ -62,4 +60,16 @@ export const getProductById = async (productId: string) => {
   } catch (error: any) {
     throw new Error(`Failed to connect to database: ${error.message}`);
   }
-}
+};
+
+export const getAllProducts = async () => {
+  try {
+    connectToDB();
+
+    const products = await Product.find();
+
+    return products;
+  } catch (error: any) {
+    throw new Error(`Failed to connect to database: ${error.message}`);
+  }
+};
