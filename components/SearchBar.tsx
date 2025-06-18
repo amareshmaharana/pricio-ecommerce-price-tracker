@@ -47,7 +47,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <form className="flex flex-wrap gap-4 mt-12" onSubmit={handleSubmit}>
+      <form className="flex flex-wrap gap-4 mt-12 font-spaceGrotesk" onSubmit={handleSubmit}>
         <input
           type="text"
           value={searchPrompt}
