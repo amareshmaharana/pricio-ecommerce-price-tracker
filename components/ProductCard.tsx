@@ -20,7 +20,7 @@ const ProductCard = ({ product }: Props) => {
                 />
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 font-spaceGrotesk">
                 <h3 className='product-title'>{product.title}</h3>
 
                 <div className="flex justify-between">
@@ -29,7 +29,7 @@ const ProductCard = ({ product }: Props) => {
                     </p>
 
                     <p className="text-black text-lg font-semibold">
-                        <span>{product?.currency}</span>
+                        <span>{product?.currency} </span>
                         <span>{product?.currentPrice}</span>
                     </p>
                 </div>
